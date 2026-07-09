@@ -1,6 +1,6 @@
 # 💼 Job Finder
 
-Na minha jornada de aprendizagem na programação, este foi meu primeiro projeto em que tive contato com o `back-end`.
+Na minha jornada de aprendizagem na programação, este foi meu primeiro projeto em que tive contato com o `back-end` do Node.js.
 
 Ele consiste basicamente em um portal de vagas de emprego focado na área de tecnologia, desenvolvido com **Node.js** e estruturado na arquitetura **MVC (Model-View-Controller)**. Este projeto utiliza o conceito de _Server-Side Rendering_ (SSR) para gerar as telas dinamicamente no servidor antes de enviá-las ao navegador do usuário.
 
