@@ -1,0 +1,75 @@
+/* Job-view */
+
+#job-view-container {
+  /* Alinhamento e afins */
+  margin-top: 100px;
+}
+
+#job-view-container h1 {
+  /* Alinhamento e afins */
+  margin-bottom: 30px;
+}
+
+#job-view-container h1,
+h2,
+p {
+  /* Estilização */
+  color: #fff;
+}
+
+#img-container {
+  /* Alinhamento e afins */
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#img-container img {
+  /* Alinhamento e afins */
+  width: 100px;
+  /* Estilização */
+  border-radius: 50%;
+  border: 3px solid #0d6efd;
+}
+
+.simple-text {
+  /* Estilização */
+  color: #fff;
+}
+
+.job-desc {
+  /* Alinhamento e afins */
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  /* Estilização */
+  color: #fff;
+}
+
+.bold {
+  /* Estilização */
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+.main-color {
+  /* Estilização */
+  color: #ffd500;
+}
+
+.back-link {
+  /* Alinhamento e afins */
+  padding: 5px 10px;
+  /* Estilização */
+  border: 3px solid #ffd500;
+  border-radius: 3px;
+  font-weight: bold;
+  /* Animações */
+  transition: 0.5s;
+}
+
+.back-link:hover {
+  /* Estilização */
+  background-color: #7b7b7b;
+  color: #ffd500;
+  text-decoration: none;
+}

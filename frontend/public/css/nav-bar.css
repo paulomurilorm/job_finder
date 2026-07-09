@@ -1,0 +1,48 @@
+/* Nav */
+
+.navbar {
+  /* Alinhamento e afins */
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  /* Estilização */
+  background-color: #282828;
+}
+
+.navbar .navbar-brand {
+  /* Estilização */
+  color: #fff;
+}
+
+.navbar .nav-item a {
+  /* Estilização */
+  color: #ffffff;
+}
+
+.nav-item {
+  /* Alinhamento e afins */
+  margin: 0 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  /* Alinhamento e afins */
+  padding: 10px 25px;
+  /* Estilização */
+  font-weight: bold;
+}
+
+.navbar .nav-item .btn {
+  /* Estilização */
+  color: #fff;
+  background-color: #0d6efd;
+  border-radius: 5px;
+}
+
+.nav-link.btn.btn-primary:hover,
+#search-form button:hover,
+.list-group-item a:hover,
+#form-box button:hover {
+  /* Estilização */
+  background-color: #fff;
+  color: #0d6efd;
+}

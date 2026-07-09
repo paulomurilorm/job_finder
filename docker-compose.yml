@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  job-finder-app:
+    build: .
+    container_name: job-finder
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./backend/src/config/database.sqlite:/app/backend/src/config/database.sqlite
+    restart: unless-stopped

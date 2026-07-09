@@ -1,0 +1,21 @@
+@import url(./add-view.css);
+@import url(./job-view.css);
+@import url(./list.css);
+@import url(./nav-bar.css);
+@import url(./responsive.css);
+@import url(./search-form.css);
+@import url(./top-container.css);
+
+* {
+  /* Alinhamento e afins */
+  box-sizing: border-box;
+  /* Estilização */
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  /* Alinhamento e afins */
+  margin: 0;
+  /* Estilização */
+  background-color: #282828;
+}
