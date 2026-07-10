@@ -7,23 +7,6 @@ const path = require("path");
 const db = require("./config/db");
 const PORT = 3000;
 
-// Db Connection
-
-async function checkDataBase() {
-  try {
-    await db.authenticate();
-    console.log("Banco de dados autenticado com sucesso!");
-    await db.sync();
-    console.log("Banco de dados sincronizado com sucesso!");
-  } catch (error) {
-    console.error(
-      `Ocorreu um erro ao se conectar com o banco de dados: ${error}`,
-    );
-  }
-}
-
-checkDataBase();
-
 // Middlewares
 
 app.use(express.urlencoded({ extended: true }));
@@ -43,8 +26,24 @@ app.use(express.static(path.join(__dirname, "../../frontend/public")));
 
 app.use("/", require("./routes/jobs"));
 
-// Server On
+// Server ON
 
-app.listen(PORT, () => {
-  console.log(`O Express está rodando na porta ${PORT}`);
-});
+async function turningOn() {
+  try {
+    await db.authenticate();
+    console.log("Banco de dados autenticado com sucesso!");
+    await db.sync();
+    console.log("Banco de dados sincronizado com sucesso!");
+    app.listen(PORT, () => {
+      console.log(`O Express está rodando na porta ${PORT}`);
+    });
+  } catch (error) {
+    console.error(
+      `Ocorreu um erro ao se conectar com o banco de dados: ${error}`,
+    );
+    res.status(500).send("Ocorreu um erro interno.");
+    process.exit(1);
+  }
+}
+
+turningOn();

@@ -7,5 +7,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./backend/src/config/database.sqlite:/app/backend/src/config/database.sqlite
+      - ./backend/src/config/:/app/backend/src/config/
     restart: unless-stopped
