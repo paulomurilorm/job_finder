@@ -28,7 +28,7 @@ app.use("/", require("./routes/jobs"));
 
 // Server ON
 
-async function turningOn() {
+async function serverOn() {
   try {
     await db.authenticate();
     console.log("Banco de dados autenticado com sucesso!");
@@ -46,4 +46,4 @@ async function turningOn() {
   }
 }
 
-turningOn();
+serverOn();
