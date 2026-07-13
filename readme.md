@@ -1,6 +1,6 @@
 # 💼 Job Finder
 
-Na minha jornada de aprendizagem na programação, este foi meu primeiro projeto em que tive contato com o `back-end` do Node.js.
+Na minha jornada de aprendizagem na programação, este foi o projeto em que pude ter a primeira experiência com a outra parte do ecossistema do JavaScript, o **back-end do Node.js**.
 
 Ele consiste basicamente em um portal de vagas de emprego focado na área de tecnologia, desenvolvido com **Node.js** e estruturado na arquitetura **MVC (Model-View-Controller)**. Este projeto utiliza o conceito de _Server-Side Rendering_ (SSR) para gerar as telas dinamicamente no servidor antes de enviá-las ao navegador do usuário.
 
@@ -21,7 +21,7 @@ Ele consiste basicamente em um portal de vagas de emprego focado na área de tec
 
 ## 🚀 Como Executar o Projeto
 
-**Pré-requisitos:** Ter o `Docker` ou `Node.js v.24` em sua máquina.
+**Pré-requisitos:** Ter o **Docker** ou **Node.js v.24** em sua máquina.
 
 ### 📦 -> Via Docker
 
@@ -37,7 +37,7 @@ docker compose up -d
 ### 🟩 -> Via Node.js
 
 1. Clone o repositório.
-2. Com o terminal aberto **dentro da pasta backend**, instale as dependências executando `npm install`.
+2. Com o terminal aberto **dentro da pasta backend**, instale as dependências executando o comando `npm install`.
 3. Com o terminal aberto **dentro da pasta backend**, inicie o servidor de desenvolvimento com o comando:
 
 ```
