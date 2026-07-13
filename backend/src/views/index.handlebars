@@ -6,7 +6,7 @@
     Somos o site com mais vagas de tecnologia no mercado, direcionadas a home
     office.
   </p>
-  <form id="search-form" class="row g-3" action="/" method="GET">
+  <form id="search-form" class="row g-3" action="/jobfinder/home" method="GET">
     <div class="col-12 d-flex justify-content-center">
       <input
         type="text"
@@ -38,7 +38,7 @@
             <h2>{{dataValues.title}}</h2>
             <p>R${{dataValues.salary}}</p>
             <span class="new-job-label">Nova</span>
-            <a class="btn btn-primary" href="/view/{{dataValues.id}}">Ver vaga</a>
+            <a class="btn btn-primary" href="/jobfinder/view/{{dataValues.id}}">Ver vaga</a>
           </li>
           {{/each}}
         </ul>

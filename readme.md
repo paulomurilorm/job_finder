@@ -32,9 +32,9 @@ Ele consiste basicamente em um portal de vagas de emprego focado na área de tec
 docker compose up -d
 ```
 
-3. Acesse http://localhost:3000 no seu navegador.
+3. Acesse http://localhost:3000/jobfinder/home no seu navegador.
 
-### 🟩 -> Node.js v.24
+### 🟩 -> Via Node.js
 
 1. Clone o repositório.
 2. Com o terminal aberto **dentro da pasta backend**, instale as dependências executando `npm install`.
@@ -44,7 +44,7 @@ docker compose up -d
 npm run dev
 ```
 
-4. Acesse http://localhost:3000 no seu navegador.
+4. Acesse http://localhost:3000/jobfinder/home no seu navegador.
 
 ## 🧠 Oportunidades de Melhoria
 

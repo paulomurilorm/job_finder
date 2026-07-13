@@ -6,7 +6,7 @@ const JobController = require("../controllers/JobController");
 
 // --- Home-page
 
-router.get("/", JobController.search);
+router.get("/home", JobController.search);
 
 // --- Job-page
 

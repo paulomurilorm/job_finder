@@ -19,13 +19,17 @@ const JobController = {
       } else {
         // ---
         jobs = await Job.findAll({
+          // ---
           where: { title: { [Op.like]: query } },
           order: [["createdAt", "DESC"]],
         });
+
         res.render("index", { jobs, search });
       }
     } catch (error) {
+      // ---
       console.error(error);
+
       res.status(500).send("Ocorreu um erro interno.");
     }
   },
@@ -43,7 +47,9 @@ const JobController = {
       });
       // ---
     } catch (error) {
+      // ---
       console.error(error);
+
       res.status(500).send("Ocorreu um erro interno.");
     }
   },
@@ -68,10 +74,12 @@ const JobController = {
         new_job,
       });
 
-      res.redirect("/");
+      res.redirect("/jobfinder/home");
       //---
     } catch (error) {
+      // ---
       console.error(error);
+
       res.status(500).send("Ocorreu um erro interno.");
     }
   },
